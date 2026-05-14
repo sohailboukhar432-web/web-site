@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | SD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Background dégradé bhal s-soura: Azraq l-fou9 w l-khel l-teht */
+            background: linear-gradient(to bottom, #0a1336 0%, #000000 60%);
+            color: #fff;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 6%;
+            position: relative;
+        }
+
+        /* L-image 0040.jpg kat-ji f l-janb */
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            right: -5%;
+            width: 75%;
+            height: 110%;
+            background-image: url('0040.jpg'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right center;
+            z-index: 1;
+            mask-image: linear-gradient(to left, black 70%, transparent 100%); /* Fade bach d-khoul f l-bg */
+        }
+
+        nav { 
+            position: relative; 
+            z-index: 10; 
+            display: flex; 
+            align-items: center; 
+            gap: 100px; 
+        }
+
+        .logo-container img {
+            height: 45px;
+            width: auto;
+        }
+
+        nav ul { 
+            display: flex; 
+            list-style: none; 
+            gap: 45px; 
+        }
+
+        nav ul li a { 
+            color: #ccc; 
+            text-decoration: none; 
+            font-size: 0.75rem; 
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover { color: #fff; }
+
+        .main-content { 
+            position: relative; 
+            z-index: 10; 
+            margin-top: 80px; 
+        }
+
+        .sub-header { 
+            font-size: 1.1rem; 
+            color: #ddd; 
+            margin-bottom: 25px; 
+            line-height: 1.5;
+            font-weight: 300;
+        }
+
+        .status { 
+            font-size: 0.85rem; 
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 1px;
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: #00ff00; 
+            border-radius: 50%;
+            margin-right: 12px;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        /* Styling l-Headline bhal Capture d’écran_14-5-2026_141937_www.instagram.com_3.jpg */
+        h1 { 
+            font-size: 5rem; 
+            font-weight: 300; 
+            line-height: 1.2;
+        }
+
+        .highlight-line {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .highlight-box {
+            display: inline-block;
+            background-color: #162460;
+            padding: 5px 35px;
+            border-radius: 60px;
+            font-weight: 900;
+            font-size: 4.8rem;
+            border: 2px solid #1e3a8a;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            /* Had l-khassiya katzid l-vibe dyal l-bouton */
+            background: linear-gradient(180deg, #1e3a8a 0%, #0d1a44 100%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-bg"></div>
+
+    <nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="SD Logo">
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">WORKS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <p class="sub-header">Creative Designer <br> & Full-Stack Coder</p>
+        
+        <div class="status">
+            <span class="dot"></span> 
+            <span>AVAILABLE FOR WORK</span>
+        </div>
+
+        <h1>
+            Where Creativity <br>
+            <span class="highlight-line">
+                <span class="highlight-box">Meets Performance</span>
+            </span>
+        </h1>
+    </div>
+
+</body>
+</html>
